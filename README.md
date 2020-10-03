@@ -3,7 +3,8 @@ repository will be filled over time with different and up to date discordia bot 
 
 current examples: 
 -
-  - Giphy Bot
+  - Giphy Bot / WIP
+  - Gelbooru Bot [NSFW] / WIP
 
 Join the Discord: https://discord.gg/uVBMFKS
 (always open to trustworthy contributors)
