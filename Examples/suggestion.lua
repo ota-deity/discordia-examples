@@ -22,7 +22,7 @@ function suggestions(message, temp)
 end
 
 client:on("messageCreate", function(message)
-	local content = message.content
+  local content = message.content
   local args = content.split(" ")
   if argsc[1] == "~suggest" then
     table.remove(args, 1)
