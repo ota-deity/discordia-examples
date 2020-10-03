@@ -5,6 +5,7 @@ current examples:
 -
   - Giphy Bot / WIP
   - Gelbooru Bot [NSFW] / WIP
+  - Embed + Suggestion Command
 
 Join the Discord: https://discord.gg/uVBMFKS
 (always open to trustworthy contributors)
