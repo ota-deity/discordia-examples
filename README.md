@@ -7,5 +7,5 @@ current examples:
   - Gelbooru Bot [NSFW] / WIP
   - Embed + Suggestion Command
 
-Join the Discord: https://discord.gg/uVBMFKS
+Join the Discord: https://discord.gg/KNGSpUV6pj
 (always open to trustworthy contributors)
