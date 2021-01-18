@@ -10,7 +10,7 @@ discordia.extensions()
 client:on("messageCreate", function(message)
 	local content = message.content
 	if content == "!giphy" then
-		local res, data = coro.request("GET", "https://api.giphy.com/v1/gifs/random?api_key=API_KEY_HERE_PLS")
+		local res, data = coro.request("GET", "https://api.giphy.com/v1/gifs/random?api_key=6EHiVUUwueOxkhBRmg5FGDzuAUSNbSiH")
 		local key,value = unpack(res)
 		local datvar = string.split((tostring(data)),'"')
 
