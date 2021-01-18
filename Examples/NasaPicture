@@ -1,0 +1,33 @@
+local coro = require("coro-http")
+
+local discordia = require("discordia")
+local client = discordia.Client()
+
+local json = require("json")
+
+discordia.extensions()
+
+client:on("messageCreate", function(message)
+	local content = message.content
+	if content:lower() == "!nasapicture" then
+		local res, data = coro.request("GET", "https://api.nasa.gov/planetary/apod?api_key=Ta4e7PuJVYcBtIRFFu7FmGYVMC2rdJNecJQlwUUV")
+
+		message:reply {
+			embed = {
+				image = { 
+					url  = data["hdurl"] 
+				},
+
+				author = {
+					name = "Powered by Nasa",
+					icon_url = "https://img.icons8.com/color/452/nasa.png"
+				},
+
+				timestamp = discordia.Date():toISO("T","Z"),
+				color = 0x000000
+			}
+		}
+	end
+end)
+
+client:run("Bot "..io.open("./mtoken.txt"):read())
